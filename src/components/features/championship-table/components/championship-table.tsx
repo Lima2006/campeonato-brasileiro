@@ -1,4 +1,4 @@
-import { Column } from "components/toolkit";
+import { Column, Row, Text } from "components/toolkit";
 import React from "react";
 import { ChampionshipTabsType } from "../types/championship-tabs-type";
 import ChampionshipTableHeader from "./championship-table-header";
@@ -33,6 +33,9 @@ const ChampionshipTable: React.FC = () => {
         </ChampionshipTableTab>
       </ChampionshipTableHeader>
       {tabForRender()}
+      <Row className="border-t h-16 px-6 py-2 text-xs text-gray-700">
+        <Text>Todos os horários estão no: Horário de Brasília</Text>
+      </Row>
     </Column>
   );
 };
