@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Column, Row, Text } from "components/toolkit";
 import { classNames } from "core/helpers/class-names";
-import { MatchType } from "../types/api-round-object-type";
+import { MatchType } from "../types/match-type";
 
 interface ChampionshipTableCardProps {
   className?: string;
