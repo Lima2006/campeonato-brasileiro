@@ -1,4 +1,4 @@
-import { ChampionshipContextDataType } from "./campionship-table-context-type";
+import { ChampionshipContextDataType } from "./championship-table-context-type";
 import { ChampionshipTabsType } from "./championship-tabs-type";
 
 export type State = ChampionshipContextDataType;
