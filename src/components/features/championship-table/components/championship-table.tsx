@@ -33,9 +33,6 @@ const ChampionshipTable: React.FC = () => {
         </ChampionshipTableTab>
       </ChampionshipTableHeader>
       {tabForRender()}
-      <Row className="border-t h-16 px-6 py-2 text-xs text-gray-700">
-        <Text>Todos os horários estão no: Horário de Brasília</Text>
-      </Row>
     </Column>
   );
 };
