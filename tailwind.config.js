@@ -6,7 +6,11 @@ module.exports = {
     "./src/features/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#10502f",
+      },
+    },
   },
   plugins: [],
-}
+};
