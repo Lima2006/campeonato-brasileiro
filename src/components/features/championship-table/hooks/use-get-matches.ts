@@ -4,7 +4,7 @@ import { RawMatchesType } from "../types/match-type";
 
 const useGetMatches = (championshipId: number) => {
   const { data, error, isLoading } = useQuery<RawMatchesType>(
-    ["/matches"],
+    ["/matches", championshipId],
     () => getMatchesService({ championshipId })
   );
   return { data, error, isLoading };
