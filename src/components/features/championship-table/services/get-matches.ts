@@ -7,7 +7,7 @@ type ServiceType = (params: Params) => Promise<Response>;
 
 const getMatchesService: ServiceType = async ({ championshipId }) => {
   try {
-    const response = await api.get<RawMatchesType>(
+    const response = await api.get<Response>(
       `campeonatos/${championshipId}/partidas`
     );
     return response.data;
