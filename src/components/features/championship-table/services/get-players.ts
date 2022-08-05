@@ -7,7 +7,7 @@ type ServiceType = (params: Params) => Promise<Response>;
 
 const getPlayersService: ServiceType = async ({ championshipId }) => {
   try {
-    const response = await api.get<PlayerType[]>(`/campeonatos/${championshipId}/artilharia`);
+    const response = await api.get<Response>(`/campeonatos/${championshipId}/artilharia`);
     return response.data;
   } catch (error: any) {
     throw new Error("Get matches service: ", error);
