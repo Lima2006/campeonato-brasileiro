@@ -19,3 +19,14 @@ export type MatchType = {
   data_realizacao_iso: string;
   _link: string;
 };
+
+export type RawMatchesType = {
+  partidas: {
+    partidas: {
+      "primeira-fase": {
+        "chave-1": {ida: MatchType};
+        "chave-2": {ida: MatchType}
+      };
+    };
+  };
+};

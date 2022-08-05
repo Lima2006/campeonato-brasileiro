@@ -1,3 +1,1 @@
-export type ChampionshipTabsType =
-  | "partidas"
-  | "jogadores";
+export type ChampionshipTabsType = "partidas" | "jogadores" | "classificacao";

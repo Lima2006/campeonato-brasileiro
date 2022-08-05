@@ -13,11 +13,8 @@ const MatchesTableBody: React.FC<MatchesTableBody> = ({ className }) => {
     <Column className={classNames("divide-y", className)}>
       <div className="grid grid-cols-2 divide-x divide-y">
         {Object.values(data["partidas"]["partidas"]["primeira-fase"]).map(
-          (value: any) => (
-            <ChampionshipTableCard
-              key={value.ida.partida_id}
-              match={value.ida}
-            />
+          ({ ida }) => (
+            <ChampionshipTableCard key={ida.partida_id} match={ida} />
           )
         )}
       </div>

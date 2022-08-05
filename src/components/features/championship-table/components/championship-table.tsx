@@ -3,6 +3,7 @@ import React from "react";
 import { ChampionshipTabsType } from "../types/championship-tabs-type";
 import ChampionshipTableHeader from "./championship-table-header";
 import ChampionshipTableTab from "./championship-table-tab";
+import ClassificationTabBody from "./classification-tab-body";
 import MatchesTableBody from "./matches-table-body";
 import PlayersTabBody from "./players-tab-body";
 
@@ -14,7 +15,9 @@ const ChampionshipTable: React.FC = () => {
       case "partidas":
         return <MatchesTableBody />;
       case "jogadores":
-        return <PlayersTabBody />
+        return <PlayersTabBody />;
+      case "classificacao":
+        return <ClassificationTabBody />;
       default:
         return null;
     }
@@ -27,6 +30,12 @@ const ChampionshipTable: React.FC = () => {
           onClick={() => setActualTab("partidas")}
         >
           Partidas
+        </ChampionshipTableTab>
+        <ChampionshipTableTab
+          active={actualTab === "classificacao"}
+          onClick={() => setActualTab("classificacao")}
+        >
+          Classificação
         </ChampionshipTableTab>
         <ChampionshipTableTab
           active={actualTab === "jogadores"}

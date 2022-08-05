@@ -7,7 +7,9 @@ const MainPage: React.FC = () => {
       <Head>
         <title>Campeonato Brasileiro</title>
       </Head>
-      <ChampionshipTable />
+      <div className="w-screen flex flex-col pt-16 items-center">
+        <ChampionshipTable />
+      </div>
     </main>
   );
 };
